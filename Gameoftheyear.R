@@ -53,4 +53,16 @@ ggplot(data = df, mapping = aes(x = Ratings, y= Name,)) + geom_point(color = "bl
 
 
                                                                      
-                                                                     
+#Visualizing different number of games sold by genre
+  
+
+ggplot(data)+
+  geom_bar(aes(x=Genre), fill ='#003366', color ='#add8e6')+
+labs(title = "Number of different games sold by Genre")
+
+
+#visualizing revenue made by each genre
+
+ggplot(data)+
+  geom_col(aes(x=Genre, y = Revenue), fill ='#003366', color ='#add8e6')+
+  labs(title = "Number of different games sold by Genre")                                                                                                                                          
